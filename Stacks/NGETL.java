@@ -16,6 +16,7 @@ public class NGETL {
                 int pos=st.peek();
                 ans[pos]=arr[i];
                 st.pop();
+
             }
             st.push(i);
         }
