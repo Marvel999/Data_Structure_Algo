@@ -27,11 +27,16 @@ public class NGETR {
         int[] nge = solve(a);
         display(nge);
     }
-
+// right to left
+    // put last index -1
+    //  pop next step answer next step push
     public static int[] solve(int[] arr){
         int[] ans=new int[arr.length];
         Stack<Integer> st=new Stack<>();
         st.push(arr[arr.length-1]);
+
+        String s;
+
         ans[arr.length-1]=-1;
         for(int i=arr.length-2;i>=0;i--){
             while(st.size()>0 && arr[i]>=st.peek()){

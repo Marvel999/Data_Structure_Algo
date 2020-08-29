@@ -4,21 +4,28 @@ import java.util.Scanner;
 import java.util.Stack;
 
 public class NGETL {
-    public static int[] nget(int[] arr){
 
+// answer, pop, push
+    // left to right
+    public static int[] solve(int[] arr){
+        int[] ans=new int[arr.length];
         Stack<Integer> st=new Stack<>();
-        nget(arr);
-        return arr;
-    }
-    public static void main(String[] args){
-        Scanner sc=new Scanner(System.in);
-        int n=sc.nextInt();
-        int[] arr=new int[n];
-        int[] ans= new int[n];
-
-        for (int i=0;i<n;i++){
-            arr[i]=sc.nextInt();
+        st.push(0);
+        for(int i=1;i<arr.length;i++){
+            while(st.size()>0 && arr[i]>arr[st.peek()]){
+                int pos=st.peek();
+                ans[pos]=arr[i];
+                st.pop();
+            }
+            st.push(i);
         }
-        nget(arr);
+
+        while(st.size()>0){
+            int pos=st.peek();
+            ans[pos]=-1;
+            st.pop();
+        }
+        return ans;
     }
+
 }
