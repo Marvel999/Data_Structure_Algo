@@ -9,6 +9,7 @@ public class NGETL {
     // left to right
     public static int[] solve(int[] arr){
         int[] ans=new int[arr.length];
+
         Stack<Integer> st=new Stack<>();
         st.push(0);
         for(int i=1;i<arr.length;i++){
@@ -16,7 +17,6 @@ public class NGETL {
                 int pos=st.peek();
                 ans[pos]=arr[i];
                 st.pop();
-
             }
             st.push(i);
         }
