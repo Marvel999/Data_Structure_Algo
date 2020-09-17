@@ -11,6 +11,7 @@ public class Sting_bulder {
         stb.setCharAt(2,'v');
         System.out.println(stb);
         System.out.println(stb.charAt(2));
+        stb.reverse();
 
 
     }
