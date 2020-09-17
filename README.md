@@ -5,7 +5,7 @@
 
 # GeeksforGeeks-Topicwise-Solutions
 
-My solutions to algorithmic problems in [GeeksforGeeks](https://www.geeksforgeeks.org/) written in **JAVA**
+My solutions to Data Structure And algo. problems in [PEPCoding](https://www.pepcoding.com/resources/online-java-foundation) written in **JAVA**
 
 ## What you can find in this repository
 
@@ -15,13 +15,13 @@ I have solved quite a number of problems from several topics. See the below tabl
 
 | Topic Name| Number of Problems Solved| 
 |  :--------: |  :--------: | 
-| [Arrays](https://github.com/Marvel999/GeeksforGeeks_DS-algo_Topicwise_Solutions/tree/master/Array_List_In_Java)| 42|
-|[ArrayList](https://github.com/Marvel999/GeeksforGeeks_DS-algo_Topicwise_Solutions/tree/master/Array_List_In_Java)|5|
-|[LinkedList](https://github.com/Marvel999/GeeksforGeeks_DS-algo_Topicwise_Solutions/tree/master/LikedList_In_Java)|25|
-|[Competitive programming](https://github.com/Marvel999/GeeksforGeeks_DS-algo_Topicwise_Solutions/tree/master/Competitive_programming)|35|
-|[Recursion](https://github.com/Marvel999/GeeksforGeeks_DS-algo_Topicwise_Solutions/tree/master/Recursion)|15|
-|[Stack](https://github.com/Marvel999/GeeksforGeeks_DS-algo_Topicwise_Solutions/tree/master/Stack)|8|
-|[String](https://github.com/Marvel999/GeeksforGeeks_DS-algo_Topicwise_Solutions/tree/master/String)|5|
+| [Array](https://github.com/Marvel999/Data_Structure_Algo/tree/master/Array)|15|
+|[2D Array](https://github.com/Marvel999/Data_Structure_Algo/tree/master/TwoDimationalArray)|10|
+|[Pattern Question](https://github.com/Marvel999/Data_Structure_Algo/tree/master/Pattern_question)|10|
+|[LinkedList](https://github.com/Marvel999/Data_Structure_Algo/tree/master/LinkedList)|25|
+|[Recursion](https://github.com/Marvel999/Data_Structure_Algo/tree/master/Recursion)|20|
+|[Stack](https://github.com/Marvel999/Data_Structure_Algo/tree/master/Stacks)|15|
+|[String](https://github.com/Marvel999/Data_Structure_Algo/tree/master/String)|10|
 
 
 
@@ -43,7 +43,7 @@ I have solved quite a number of problems from several topics. See the below tabl
 
 ## What I'll be doing with this repository
 
-One day in the foreseeable future I will have solved all the challenges on [GeeksforGeeks](https://www.geeksforgeeks.org/).
+One day in the foreseeable future I will have solved all the challenges on [PEPCoding](https://www.pepcoding.com/resources/online-java-foundation).
 Then this repository will mostly become a static one.
 
 Constructive criticisms or code reviews of any kind are very much welcome.
@@ -51,19 +51,3 @@ Constructive criticisms or code reviews of any kind are very much welcome.
 If you have any questions about the solutions you can find here, feel free to contact me **manishjobs1999@gmail.com**.
 
 
- LICENCE
------
-
- Copyright 2020 Manish
-
-    Licensed under the Apache License, Version 2.0 (the "License");
-    you may not use this file except in compliance with the License.
-    You may obtain a copy of the License at
-
-        http://www.apache.org/licenses/LICENSE-2.0
-
-    Unless required by applicable law or agreed to in writing, software
-    distributed under the License is distributed on an "AS IS" BASIS,
-    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-    See the License for the specific language governing permissions and
-    limitations under the License.
