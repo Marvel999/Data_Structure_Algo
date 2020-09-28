@@ -141,6 +141,47 @@ public class Post_pre_Inorder_triversal_of_binary_tree {
         System.out.println(node.data);
     }
 
+    public static void iterativePrePostInTraversal(Node node) {
+        Stack<Pair> st=new Stack<>();
+        Pair p=new Pair(node,1);
+        String pre="";
+        String in="";
+        String post="";
+        while(st.size()>0){
+            Pair top=st.peek();
+
+            if(top.state==1){
+                pre +=top.node.data+" ";
+                top.state++;
+
+                if(top.node.left!=null){
+                    Pair lp=new Pair(top.node.left,1);
+                    st.push(lp);
+                }
+
+            }else if(top.state==2){
+
+                in +=top.node.data+" ";
+                top.state++;
+
+                if(top.node.right!=null){
+                    Pair rp=new Pair(top.node.right,1);
+                    st.push(rp);
+                }
+
+            }else{
+                post +=top.node.data+" ";
+                st.pop();
+            }
+
+        }
+        System.out.println(pre);
+        System.out.println(in);
+        System.out.println(post);
+
+    }
+
+
     public static void main(String[] args) throws Exception {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         int n = Integer.parseInt(br.readLine());
