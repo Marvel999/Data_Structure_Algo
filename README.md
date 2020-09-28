@@ -22,6 +22,8 @@ I have solved quite a number of problems from several topics. See the below tabl
 |[Recursion](https://github.com/Marvel999/Data_Structure_Algo/tree/master/Recursion)|20|
 |[Stack](https://github.com/Marvel999/Data_Structure_Algo/tree/master/Stacks)|15|
 |[String](https://github.com/Marvel999/Data_Structure_Algo/tree/master/String)|10|
+|[Generic Tree](https://github.com/Marvel999/Data_Structure_Algo/tree/master/Generic_Tree)|20|
+|[Binary Tree](https://github.com/Marvel999/Data_Structure_Algo/tree/master/Binary_Tree)|20|
 
 
 
