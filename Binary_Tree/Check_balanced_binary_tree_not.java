@@ -3,8 +3,8 @@ package Binary_Tree;
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
 import java.util.Stack;
-// sum is done by chage and return statage.
-public class Calculate_tilt_Binary_tree {
+
+public class Check_balanced_binary_tree_not {
     public static class Node {
         int data;
         Node left;
@@ -81,31 +81,20 @@ public class Calculate_tilt_Binary_tree {
         display(node.left);
         display(node.right);
     }
-
-    public static int height(Node node) {
-        if (node == null) {
-            return -1;
-        }
-
-        int lh = height(node.left);
-        int rh = height(node.right);
-
-        int th = Math.max(lh, rh) + 1;
-        return th;
-    }
-
-    static int tilt = 0;
-    public static int tilt(Node node){
+    static boolean isbalabed=true;
+    public static int isBalanced(Node node){
         if(node==null)
             return 0;
-        int ls=tilt(node.left);
-        int rs=tilt(node.right);
-        int ltilt=Math.abs(ls-rs);
-        tilt +=ltilt;
-        int tts=ls+rs+node.data;
-        return tts;
-    }
 
+        int lh= isBalanced(node.left);
+        int rh= isBalanced(node.right);
+        int lbal=Math.abs(lh-rh);
+        if(lbal>1)
+            isbalabed=false;
+
+        int height=Math.max(lh,rh)+1;
+        return height;
+    }
     public static void main(String[] args) throws Exception {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         int n = Integer.parseInt(br.readLine());
@@ -120,8 +109,9 @@ public class Calculate_tilt_Binary_tree {
         }
 
         Node root = construct(arr);
-
-        tilt(root);
-        System.out.println(tilt);
+        isBalanced(root);
+        System.out.println(isbalabed);
+        // write your code here
     }
 }
+
