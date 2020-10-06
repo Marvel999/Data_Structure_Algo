@@ -24,6 +24,9 @@ I have solved quite a number of problems from several topics. See the below tabl
 |[String](https://github.com/Marvel999/Data_Structure_Algo/tree/master/String)|10|
 |[Generic Tree](https://github.com/Marvel999/Data_Structure_Algo/tree/master/Generic_Tree)|20|
 |[Binary Tree](https://github.com/Marvel999/Data_Structure_Algo/tree/master/Binary_Tree)|20|
+|[Binary Search Tree](https://github.com/Marvel999/Data_Structure_Algo/tree/master/Binary_Search_Tree)|20|
+|[HashMap](https://github.com/Marvel999/Data_Structure_Algo/tree/master/HashMap)|10|
+|[Heaps](https://github.com/Marvel999/Data_Structure_Algo/tree/master/Heaps)|10|
 
 
 
