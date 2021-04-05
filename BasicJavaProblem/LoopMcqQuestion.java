@@ -9,7 +9,8 @@ public class LoopMcqQuestion {
 //        for (;;){
 //            System.out.println("Loop");
 //        }
-        for (int i=0;i<1;i--)
-            System.out.println("Looop");
+//        for (int i=0;i<1;i--)
+            System.out.println(Math.pow(10,2));
+
     }
 }
