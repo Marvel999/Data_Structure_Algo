@@ -1,9 +1,7 @@
-# GeeksforGeeks DS-algo. Topicwise Solutions
+# Pepcoding and GeeksforGeeks DS-algo. Topicwise Solutions
 <p align="center">
   <img src="https://miro.medium.com/max/1050/1*9QRFQdpO2f59GsN2KsE9XA.png">
 </p>
-
-# GeeksforGeeks-Topicwise-Solutions
 
 My solutions to Data Structure And algo. problems in [PEPCoding](https://www.pepcoding.com/resources/online-java-foundation) written in **JAVA**
 
@@ -15,6 +13,8 @@ I have solved quite a number of problems from several topics. See the below tabl
 
 | Topic Name| Number of Problems Solved| 
 |  :--------: |  :--------: | 
+| [Java Basic](https://github.com/Marvel999/Data_Structure_Algo/tree/master/Pattern_question)|13|
+| [Patterns](https://github.com/Marvel999/Data_Structure_Algo/tree/master/Pattern_question)|20|
 | [Array](https://github.com/Marvel999/Data_Structure_Algo/tree/master/Array)|15|
 |[2D Array](https://github.com/Marvel999/Data_Structure_Algo/tree/master/TwoDimationalArray)|10|
 |[Pattern Question](https://github.com/Marvel999/Data_Structure_Algo/tree/master/Pattern_question)|10|
