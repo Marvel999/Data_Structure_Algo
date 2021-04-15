@@ -35,6 +35,7 @@ public class pattern17 {
     }
     }
 
+    // Space and star saprable method
     public static void saprableMathode(int n){
         int lspc=n/2;
         int stc=1;
