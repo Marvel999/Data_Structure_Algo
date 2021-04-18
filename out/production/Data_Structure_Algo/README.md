@@ -1,9 +1,7 @@
-# GeeksforGeeks DS-algo. Topicwise Solutions
+# Pepcoding and GeeksforGeeks DS-algo. Topicwise Solutions
 <p align="center">
   <img src="https://miro.medium.com/max/1050/1*9QRFQdpO2f59GsN2KsE9XA.png">
 </p>
-
-# GeeksforGeeks-Topicwise-Solutions
 
 My solutions to Data Structure And algo. problems in [PEPCoding](https://www.pepcoding.com/resources/online-java-foundation) written in **JAVA**
 
@@ -15,6 +13,8 @@ I have solved quite a number of problems from several topics. See the below tabl
 
 | Topic Name| Number of Problems Solved| 
 |  :--------: |  :--------: | 
+| [Java Basic](https://github.com/Marvel999/Data_Structure_Algo/tree/master/Pattern_question)|13|
+| [Patterns](https://github.com/Marvel999/Data_Structure_Algo/tree/master/Pattern_question)|20|
 | [Array](https://github.com/Marvel999/Data_Structure_Algo/tree/master/Array)|15|
 |[2D Array](https://github.com/Marvel999/Data_Structure_Algo/tree/master/TwoDimationalArray)|10|
 |[Pattern Question](https://github.com/Marvel999/Data_Structure_Algo/tree/master/Pattern_question)|10|
@@ -54,5 +54,24 @@ Then this repository will mostly become a static one.
 Constructive criticisms or code reviews of any kind are very much welcome.
 
 If you have any questions about the solutions you can find here, feel free to contact me **manishjobs1999@gmail.com**.
+
+
+## License
+```xml
+Copyright 2021 Marvel999 (Manish)
+
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+
+   http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
+```
+
 
 
