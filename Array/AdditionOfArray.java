@@ -34,14 +34,12 @@ public class AdditionOfArray {
         int sum=0;
         int carry=0;
         while(i>=0){
-            if(j>=0 && k>=0)
-                sum=a[j]+b[k]+carry;
-            else if(j<0 && k>=0)
-                sum=0+b[k]+carry;
-            else if(j>=0 && k<0)
-                sum=0+a[j]+carry;
-            else
-                sum=0+0+carry;
+            sum=+carry;
+            if(j>=0)
+                sum+=a[j];
+            if(k>=0)
+                sum+=b[k];
+
             int d=sum%10;
             carry=sum/10;
             add[i]=d;
