@@ -1,6 +1,7 @@
 import java.util.Scanner;
 
 public class MatrixMultipication {
+
     public static void main(String[] args) throws Exception {
         // write your code here
         Scanner scn =new Scanner(System.in);
@@ -22,25 +23,32 @@ public class MatrixMultipication {
             }
         }
 
-        int[][] result=new int[r1][c2];
-        int sum=0;
-        for(int r=0;r<r1;r++){
-            for(int c=0;c<c2;c++){
-                for(int k=0;k<c1;k++){
-                    sum+=mat1[r][k]*mat2[k][c];
+        if(c1==r2){
+
+            int[][] result=new int[r1][c2];
+
+            for(int r=0;r<r1;r++){
+                for(int c=0;c<c2;c++){
+                    int sum=0;
+                    for(int k=0;k<c1;k++){
+                        sum+=mat1[r][k]*mat2[k][c];
+                    }
+                    result[r][c]=sum;
                 }
-                result[r][c]=sum;
-                sum=0;
             }
-        }
 
-        for(int r=0;r<result.length;r++){
-            for(int c=0;c<result[1].length;c++){
-                System.out.print(result[r][c]+" ");
+            for(int r=0;r<result.length;r++){
+                for(int c=0;c<result[1].length;c++){
+                    System.out.print(result[r][c]+" ");
+                }
+                System.out.println();
             }
-            System.out.println();
-        }
 
+        }
+        else{
+            System.out.println("Not Matrix Mul");
+        }
 
     }
+
 }
