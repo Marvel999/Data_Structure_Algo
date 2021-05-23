@@ -4,51 +4,61 @@ import java.util.Scanner;
 
 public class Exit_point {
     public static void main(String[] args) throws Exception {
-        Scanner sc=new Scanner(System.in);
-        int n=sc.nextInt();
-        int m=sc.nextInt();
-        int[][] arr=new int[n][m];
+        Scanner scn=new Scanner(System.in);
+        int n=scn.nextInt();
+        int m=scn.nextInt();
 
-        for(int i=0;i<arr.length;i++){
-            for(int j=0;j<arr[0].length;j++){
-                arr[i][j]=sc.nextInt();
+        int arr[][]=new int[n][m];
+        for(int i =0;i<n;i++){
+            for(int j=0;j<m;j++){
+                arr[i][j]=scn.nextInt();
             }
         }
 
-        int i=0;
-        int j=0;
+        printExitPoint(arr);
+
+    }
+
+    public static void printExitPoint(int[][] arr){
+        int r=0;
+        int c=0;
         int dir=0;
-        while(true){
-            dir=(dir+arr[i][j])%4;
+        while(c>=0 &&  c<arr[0].length && r>=0 && r<arr.length){
 
-            if(dir==0){ //east;
-                j++;
-            }else if(dir==1){//south
-                i++;
-            }else if(dir==2){//north
-                i--;
-            }else if(dir==3){//west
-                j--;
-            }
+            dir=(dir+arr[r][c])%4;
 
-            if(i<0){
-                i++;
-                break;
-            }else if(j<0){
-                j++;
-                break;
+            if(dir==0){
+                c++;
+                if(c==arr[0].length){
+                    c--;
+                    break;
+                }
             }
-            else if(j==arr[0].length){
-                j--;
-                break;
-            }else if(i==arr.length){
-                i--;
-                break;
+            else if(dir==1){
+                r++;
+                if(r==arr.length){
+                    r--;
+                    break;
+                }
+            }else if(dir==2){
+                c--;
+                if(c==-1){
+                    c++;
+                    break;
+                }
+            }
+            else {
+                r--;
+
+                if(r==-1){
+                    r++;
+                    break;
+                }
             }
         }
 
-        System.out.println(i);
-        System.out.println(j);
+        System.out.println(r);
+        System.out.println(c);
 
     }
 }
