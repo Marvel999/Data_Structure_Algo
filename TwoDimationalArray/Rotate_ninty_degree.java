@@ -5,39 +5,59 @@ import java.util.Scanner;
 public class Rotate_ninty_degree {
 
     public static void main(String[] args) throws Exception {
-        Scanner sc=new Scanner(System.in);
-        int n=sc.nextInt();
-        int m=sc.nextInt();
-        int[][] arr=new int[n][m];
+        // write your code here
+        Scanner scan=new Scanner(System.in);
+        int n=scan.nextInt();
 
+        int[][] arr=new int[n][n];
         for(int i=0;i<n;i++){
-            for(int j=0;j<m;j++){
-                arr[i][j]=sc.nextInt();
+            for(int j=0;j<n;j++){
+                arr[i][j]=scan.nextInt();
             }
         }
 
+
+
+
+        matRotation(arr);
+
+        display(arr);
+    }
+
+    public static void matrixTran(int[][] arr){
+        int temp=0;
+        int n=arr.length;
         for(int i=0;i<n;i++){
-            for(int j=i;j<m;j++){
-                int temp=arr[i][j];
+            for(int j=0;j<i;j++){
+                temp=arr[i][j];
                 arr[i][j]=arr[j][i];
                 arr[j][i]=temp;
             }
         }
+    }
 
-        for(int i=0;i<arr.length;i++){
-            int li=0;
-            int ri=arr.length-1;
-            while(li<ri){
-                int temp=arr[li][i];
-                arr[li][i]=arr[ri][i];
-                arr[ri][i]=temp;
-                ri--;
-                li++;
+    public static void collomReversal(int[][] arr){
+        int lo=0;
+        int n=arr.length;
+        int hi=n-1;
+
+        while(lo<hi){
+            for(int i=0;i<n;i++){
+                int temp=arr[i][lo];
+                arr[i][lo]=arr[i][hi];
+                arr[i][hi]=temp;
             }
+
+            lo++;
+            hi--;
         }
 
-        display(arr);
+    }
 
+
+    public static void matRotation(int[][] arr){
+        matrixTran(arr);
+        collomReversal(arr);
     }
 
     public static void display(int[][] arr){
