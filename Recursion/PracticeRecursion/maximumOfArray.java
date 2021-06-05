@@ -15,8 +15,8 @@ public class maximumOfArray {
     }
 
     public static int maxOfArray(int[] arr, int idx){
-        if(idx==arr.length)
-            return 0;
+        if(idx==arr.length-1)
+            return arr[idx];
 
         int smax=maxOfArray(arr,idx+1);
         int max =Math.max(arr[idx], smax);
