@@ -1,6 +1,7 @@
 package Stacks.PracticeStack;
 
 import java.io.BufferedReader;
+import java.io.InputStreamReader;
 
 public class dynamic_Stack {
 
