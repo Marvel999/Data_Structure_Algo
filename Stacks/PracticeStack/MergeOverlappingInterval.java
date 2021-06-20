@@ -64,7 +64,6 @@ public class MergeOverlappingInterval {
 
         Stack<Interval> st=new Stack<>();
         st.push(intv[0]);
-
         for(int i=1;i<n;i++){
             Interval curr= intv[i];
             Interval top=st.peek();
