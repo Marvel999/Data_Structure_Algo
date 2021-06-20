@@ -5,13 +5,13 @@ import java.io.InputStreamReader;
 import java.util.ArrayDeque;
 import java.util.Queue;
 
-public class QueueToStackAdapter {
+public class QueueToStackAdapterPop {
 
-    public static class QueueToStackAdapter1 {
+    public static class QueueToStackAdapter {
         Queue<Integer> mainQ;
         Queue<Integer> helperQ;
 
-        public QueueToStackAdapter1() {
+        public QueueToStackAdapter() {
             mainQ = new ArrayDeque<>();
             helperQ = new ArrayDeque<>();
         }
@@ -23,47 +23,37 @@ public class QueueToStackAdapter {
 
         void push(int val) {
             // write your code here
+            helperQ=mainQ;
+            mainQ=new ArrayDeque<>();
             mainQ.add(val);
+            while(helperQ.size()!=0){
+                mainQ.add(helperQ.remove());
+            }
+
         }
 
         int pop() {
+            // write your code here
             if(mainQ.size()==0){
-                System.out.println("stack underflow");
+                System.out.println("Stack overflow");
                 return -1;
             }
-            // write your code here
-            while(mainQ.size()!=1){
-                helperQ.add(mainQ.remove());
-            }
-            int val =mainQ.remove();
-            mainQ=helperQ;
-            helperQ=new ArrayDeque<>();
-            return val;
-
+            return mainQ.remove();
         }
-
 
         int top() {
+            // write your code here
             if(mainQ.size()==0){
-                System.out.println("stack underflow");
+                System.out.println("Stack overflow");
                 return -1;
             }
-            // write your code here
-            while(mainQ.size()!=1){
-                helperQ.add(mainQ.remove());
-            }
-            int val =mainQ.remove();
-            helperQ.add(val);
-            mainQ=helperQ;
-            helperQ=new ArrayDeque<>();
-            return val;
+            return mainQ.peek();
         }
-
     }
 
     public static void main(String[] args) throws Exception {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-        QueueToStackAdapter1 st = new QueueToStackAdapter1();
+        QueueToStackAdapter st = new QueueToStackAdapter();
 
         String str = br.readLine();
         while (str.equals("quit") == false) {
